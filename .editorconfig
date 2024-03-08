@@ -1,0 +1,9 @@
+# EditorConfig helps developers define and maintain consistent coding styles between different editors and IDEs
+# For more information about the properties used in this file, see http://editorconfig.org
+
+# Top-most EditorConfig file
+root = true
+
+[*]
+indent_style = space
+indent_size = 2
