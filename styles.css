@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-ThinItalic-webfont.eot');
+    src: url('Roboto-ThinItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Roboto-ThinItalic-webfont.woff') format('woff'),
+         url('Roboto-ThinItalic-webfont.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  html {
+    font-family: 'Roboto', sans-serif;
+  }
+  .formWrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  input {
+    border: 3px solid #ccc;
+    color: rgb(8, 36, 50);
+    font-size: 20px;
+    border-radius: 5px;
+    height: 40px;
+    margin-bottom: 5px;
+    padding: 5px 20px;
+  }
+  button {
+    border: 3px solid #00baf3;
+    background-color: #5fd2f5;
+    color: rgb(8, 36, 50);
+    font-size: 20px;
+    height: 50px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  button:hover {
+    background-color: #00baf3;
+  }
+  .output {
+    margin-top: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
+    font-size: xxx-large;
+    word-wrap: break-word;
+    font-family: monospace;
+  }
+  header,
+  main {
+    padding: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }

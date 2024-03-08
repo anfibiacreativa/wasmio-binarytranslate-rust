@@ -3,7 +3,6 @@ import init, { word_to_binary } from './pkg/rust_binary_translate.js';
 
 async function run() {
     await init();
-
     // Get input from the HTML input box
     const inputWord = document.getElementById('inputWord').value;
 
@@ -20,5 +19,17 @@ async function run() {
     console.log('Binary Data:', binaryString);
 }
 
-// Attach the run function to the global scope for simplicity
-window.run = run;
+function setup() {
+    // Add an event listener to the button
+    document.getElementById('translateButton').addEventListener('click', handleClick);
+}
+
+function handleClick(event) {
+    event.preventDefault();
+    const inputWord = document.getElementById('inputWord').value;
+    // Run the translate function in the wasm module
+    run();
+}
+
+// Setup the event handlers
+setup();
