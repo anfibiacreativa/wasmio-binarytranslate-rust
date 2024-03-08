@@ -1,0 +1,2 @@
+- Build with cargo/wasm-pack "wasm-pack build --target web"
+- Start a server with for example "python3 -m http.server"
