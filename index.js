@@ -18,7 +18,7 @@ async function run() {
   const outputElement = document.getElementById('output');
   outputElement.textContent = binaryString;
 
-  console.log('Binary Data:', binaryString);
+  console.log(`Binary Translation of "${inputWord}" is: ${binaryString}`);
 }
 
 function setup() {
