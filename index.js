@@ -1,5 +1,5 @@
 // index.js
-import init, { word_to_binary } from './pkg/rust_binary_translate.js';
+import { word_to_binary } from './pkg/rust_binary_translate.js';
 
 async function run() {
   await init();
