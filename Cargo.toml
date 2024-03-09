@@ -11,6 +11,3 @@ crate-type = ["cdylib"]
 [dependencies]
 wasm-bindgen = "0.2.68"
 
-[package.metadata.wasm-pack.profile.dev]
-debug = true
-debug-assertions = true
