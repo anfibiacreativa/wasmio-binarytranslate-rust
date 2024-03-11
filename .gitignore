@@ -3,3 +3,7 @@ node_modules/
 pkg_tmp/
 backups/
 pkg/
+
+# Vite dists
+dist/ 
+dist/*
