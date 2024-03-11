@@ -13,6 +13,7 @@
             "webRoot": "${workspaceFolder}",
             "trace": true,
             "sourceMaps": true,
+            "outFiles": ["${workspaceFolder}/dist/assets/**/*.js", "${workspaceFolder}/dist/assets/**/*.js.map"]
         }
     ]
 }
