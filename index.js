@@ -1,5 +1,6 @@
 // index.js
-import { word_to_binary } from './pkg/rust_binary_translate.js';
+import { pkg } from './pkg/rust_binary_translate.js';
+const { word_to_binary } = pkg;
 
 async function run() {
   // await __wbg_init();

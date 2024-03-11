@@ -1,2 +1,5 @@
 /target
 node_modules/
+pkg_tmp/
+backups/
+pkg/
