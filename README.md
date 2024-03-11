@@ -25,7 +25,7 @@ At which point, you can use the translator to translate any string you enter in 
 ### From VS Code
 Docs: https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_debugging-webassembly
 
-### Rust Wasm modul with DWARF
+### Rust Wasm module with DWARF information
 
 > [!IMPORTANT]  
 > Rust emits DWARF debug information. However, wasm-pack does not yet retain it during the build. So, instead of running wasm-pack build, users of the common wasm-bindgen/wasm-pack libraries should build manually build using the following commands:
