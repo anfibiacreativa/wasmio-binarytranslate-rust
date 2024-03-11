@@ -44,5 +44,28 @@ to build your library. And
 ```bash
 $ wasm-bindgen --keep-debug --out-dir pkg ./target/wasm32-unknown-unknown/debug/<library-name>.wasm <extra-arguments> 
 ```
-
 to generate the WebAssembly bindings, replacing <library-name> with the name from your Cargo.toml and configuring <extra-arguments> as necessary.
+In our case, we run:
+
+```bash
+$ wasm-bindgen --keep-debug --out-dir pkg ./target/wasm32-unknown-unknown/debug/rust_binary_translate.wasm
+```
+with the default `--target`, which in this case is `bundler`.
+Once it's run, update the contents of the file `./pkg/rust_binary_translate.js`
+
+to 
+
+```javascript
+import * as wasm from "./rust_binary_translate_bg.wasm";
+import { __wbg_set_wasm } from "./rust_binary_translate_bg.js";
+__wbg_set_wasm(wasm);
+// had to refactor the export statement to get the import to work
+export * as pkg from "./rust_binary_translate_bg.js";
+```
+
+If it generates a `package.json`, also make sure to set
+```json
+"type": "module"
+```
+
+

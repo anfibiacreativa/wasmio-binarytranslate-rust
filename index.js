@@ -1,8 +1,9 @@
 // index.js
-import init, { word_to_binary } from './pkg/rust_binary_translate.js';
+import { pkg } from './pkg/rust_binary_translate.js';
+const { word_to_binary } = pkg;
 
 async function run() {
-  await init();
+  // await __wbg_init();
   // Get input from the HTML input box
   const input = document.getElementById('inputWord');
   const inputWord = input.value;

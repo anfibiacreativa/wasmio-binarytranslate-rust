@@ -6,7 +6,6 @@
   "type": "module",
   "private": true,
   "scripts": {
-
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
@@ -16,6 +15,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "vite": "^5.1.5"
+    "vite": "^5.1.5",
+    "vite-plugin-top-level-await": "^1.4.1",
+    "vite-plugin-wasm": "^3.3.0"
   }
 }
