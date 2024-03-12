@@ -8,7 +8,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test:playwright": "npx playwright test",
+    "install:playwright": "npx playwright install --with-deps"
   },
   "keywords": [],
   "author": "",
