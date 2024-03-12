@@ -9,10 +9,11 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "http://localhost:5173",
+            "url": "http://[::1]:5173",
             "webRoot": "${workspaceFolder}",
             "trace": true,
             "sourceMaps": true,
+            "outFiles": ["${workspaceFolder}/dist/assets/**/*.js", "${workspaceFolder}/dist/assets/**/*.js.map"]
         }
     ]
 }
