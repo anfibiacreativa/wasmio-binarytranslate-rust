@@ -7,3 +7,7 @@ pkg/
 # Vite dists
 dist/ 
 dist/*
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
