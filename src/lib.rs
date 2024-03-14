@@ -1,12 +1,11 @@
 // src/lib.rs
 use wasm_bindgen::prelude::*;
-// use std::error::Error;
 
 #[wasm_bindgen]
 pub fn word_to_binary(word: &str) -> Result<Vec<u8>, JsValue> {
     // check if the input contains only alphanumeric characters, no special chars allowed
     if !word.chars().all(|c| c.is_ascii_alphanumeric()) {
-        return Err(JsValue::from_str("No special chars can be translated."));
+        return Err(JsValue::from_str("Oooops! There was an error. But what errror?!?!?!"));
     }
 
     let mut binary_data = Vec::new();
