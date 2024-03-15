@@ -6,6 +6,8 @@ This is a Rust version of the binary translator I built with JavaScript and [Jav
 - [Node.js LTS](https://nodejs.org/en)
 
 ## Usage
+See a video of the debugging: https://youtu.be/lytt2Od7jt0
+
 
 Fork the repo, and build the translator library, running
 ```bash
